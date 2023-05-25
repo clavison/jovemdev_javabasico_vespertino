@@ -2,6 +2,9 @@ package br.com.trier.aula_2.carros;
 
 import javax.swing.JOptionPane;
 
+import lombok.Getter;
+
+@Getter
 public enum EnumCor {
 	
 	PRETO (1, "Preto"),
@@ -10,8 +13,8 @@ public enum EnumCor {
 	VERMELHO (4, "Vermelho"),
 	PRATA (0, "Prata");
 	
-	int codigo;
-	String descricao;
+	private int codigo;
+	private String descricao;
 	
 	private EnumCor(int codigo, String descricao) {
 		this.codigo = codigo;

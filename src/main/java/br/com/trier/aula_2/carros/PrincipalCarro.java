@@ -16,6 +16,7 @@ public class PrincipalCarro {
 			case 1:
 				Carro c = new Carro();
 				c.cadastra();
+				c.setAno(2050);
 				lista.add(c);
 				break;
 			case 2:

@@ -2,11 +2,16 @@ package br.com.trier.aula_2.carros;
 
 import javax.swing.JOptionPane;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Carro {
 	
-	String marca;
-	int ano;
-	EnumCor cor;
+	private String marca;
+	private int ano;
+	private EnumCor cor;
 	
 	void cadastra(){
 		marca = JOptionPane.showInputDialog("Marca");
@@ -36,7 +41,7 @@ public class Carro {
 	public String toString() {
 		return "Marca: "+ marca + "\n"
 				+ "Ano: " + ano + "\n"
-				+ "Cor: " + cor.descricao+"\n"
+				+ "Cor: " + cor.getDescricao()+"\n"
 				+ "_____________\n";
 	}
 	
@@ -51,6 +56,5 @@ public class Carro {
 	boolean isCor(EnumCor cor) {
 		return cor == this.cor;
 	}
-	
 
 }

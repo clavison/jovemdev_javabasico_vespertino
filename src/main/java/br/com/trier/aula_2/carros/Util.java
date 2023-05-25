@@ -45,7 +45,7 @@ public class Util {
 	
 	static String buscarPorCor(List<Carro> carros) {
 		EnumCor cor = EnumCor.escolheCor();
-		String ret = "Carros da cor %s\n".formatted(cor.descricao);
+		String ret = "Carros da cor %s\n".formatted(cor.getDescricao());
 		int count = 0;
 		for(Carro c: carros) {
 			if(c.isCor(cor)) {
